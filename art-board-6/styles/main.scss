@@ -1,0 +1,236 @@
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $color-light-grey;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    position: relative;
+}
+
+.special-ofert {
+    @include flex(space-between, row);
+    background-color: $color-brown;
+    letter-spacing: 0.175em;
+    margin-left: 70px;
+    padding: 12px 100px;
+    position: relative;
+    transform: skew(3.75deg);
+    transform-style: preserve-3d;
+    width: fit-content;
+
+    &::after {
+        background-color: $color-shadow;
+        content: '';
+        height: 117px;
+        left: -15px;
+        position: absolute;
+        top: 0;
+        transform: translateZ(-1em);
+        width: 850px;
+    }
+}
+
+.special-ofert__text {
+    @include font($font-size-xx-large);
+    line-height: 1;
+}
+
+.right__content {
+    background-color: $color-brown;
+    box-shadow: -10px 10px 0px 10px $color-shadow;
+    height: 100vh;
+    padding: 30px 55px 0;
+    position: relative;
+    right: -75px;
+    transform: skew(3.75deg);
+    width: 984px;
+}
+
+.right__text-content {
+    @include flex(space-between, row);
+    padding: 0 20px;
+    transform: skew(-3.75deg);
+}
+
+.right__information {
+    @include font($font-size-medium, $color-blue);
+}
+
+.right__call {
+    @include flex(space-between, row);
+}
+
+.right__call-icon {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.right__number {
+    @include font($font-size-xx-large);
+    line-height: 1;
+}
+
+.right__pizza {
+    height: 420px;
+    width: 800px;
+
+    &::before {
+        background-color: rgba(0,0,0,0.5);
+        content: '';
+        height: 420px;
+        left: 55px;
+        position: absolute;
+        top: 625px;
+        width: 22px;
+        z-index: 2;
+    }
+
+    &::after {
+        background-image: url('../extra-small-logo.png');
+        content: '';
+        height: 83px;
+        right: 150px;
+        position: absolute;
+        top: 640px;
+        width: 99px;
+        z-index: 2;
+    }
+}
+
+.right__pizza-image {
+    object-fit: cover;
+    margin-top: 520px;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.cards {
+    height: 487px;
+    left: 91px;
+    padding: 34px 0 0;
+    position: absolute;
+    top: 125px;
+    transform-style: preserve-3d;
+    width: 1790px;
+
+    &::before {
+        background-color: $color-brown;
+        content: '';
+        position: absolute;
+        height: 487px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform-style: preserve-3d;
+        transform: skew(3.75deg);
+        width: 1790px;
+    }
+
+    .cards__background-shadow {
+        position: absolute;
+        transform-style: preserve-3d;
+        z-index: -2;
+
+        &::before {
+            background-color: $color-shadow;
+            content: '';
+            position: absolute;
+            height: 487px;
+            left: -15px;
+            position: absolute;
+            top: -16px;
+            transform: translateZ(-1em) skew(3.75deg);
+            width: 900px;
+        }
+    }
+}
+
+.cards__container {
+    @include flex(space-between, row);
+    left: -30px;
+    position: absolute;
+    width: inherit;
+}
+
+.card {
+    background-color: $color-light-grey;
+    box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.25);
+    height: 420px;
+    padding: 10px;
+    position: relative;
+    transform: skew(3.75deg);
+    width: 330px;
+}
+
+.card__title-background {
+    background-color: $color-shadow;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.card__title {
+    @include font($font-size-x-large);
+}
+
+.card__bonus {
+    @include font($font-size-large);
+    letter-spacing: 0.045em;
+    padding-left: 15px;
+}
+
+.blue {
+    color: $color-blue;
+}
+
+.card__price {
+    @include font($font-size-xxx-large, $color-red);
+    text-align: center;
+}
+
+.card__price sup {
+    font-size: $font-size-x-large;
+    margin-left: 10px;
+}
+
+.pizza-make {
+    margin: 525px 0 0 125px;
+    transform: skew(3.75deg);
+    position: relative;
+}
+
+.pizza-make__title {
+    @include font($font-size-xx-large, $color-navy);
+    margin-bottom: 10px;
+}
+
+.pizza-make__description {
+    @include font($font-size-medium);
+    letter-spacing: 0.05em;
+    line-height: 48px;
+    position: absolute;
+    width: 825px;
+}
+
+.pizza-make__description:nth-child(3) {
+    top: 350px;
+    width: 875px;
+}
+
+.brown {
+    color: $color-brown;
+}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 100px 0 0;
+}
+
+.wrapper__title {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    margin-bottom: 50px;
+}
+
+.boxes {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box {
+    border-radius: 5px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 20%;
+
+    .box__title {
+        bottom: 15px;
+        color: #ffffff;
+        font-family: 'Roboto';
+        font-size: 24px;
+        left: 15px;
+        letter-spacing: 0.05em;
+        position: absolute;
+        text-shadow: 2px 2px 4px #333;
+        z-index: 9999;
+    }
+}
+
+.box__image {
+    border-radius: 5px;
+    height: 100%;
+    transition: all .5s ease;
+    width: 100%;
+}
+
+.box:first-child .box__image {
+    background-image: url('preview/artboard.png');
+    background-size: cover;
+}
+
+.box:nth-child(2) .box__image {
+    background-image: url('preview/artboard-4.png');
+    background-size: cover;
+}
+
+.box:nth-child(3) .box__image {
+    background-image: url('preview/artboard-6.png');
+    background-size: cover;
+}
+
+.box:nth-child(4) .box__image {
+    background-image: url('preview/artboard-7.png');
+    background-size: cover;
+}
+
+.box:active .box__image,
+.box:focus .box__image,
+.box:hover .box__image {
+    cursor: pointer;
+    transform: scale(1.2);
+}

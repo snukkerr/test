@@ -1,0 +1,15 @@
+@mixin flex($content, $direction, $align: center) {
+    align-items: $align;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+}
+
+@mixin font($size, $color: #ffffff, $weight: 300) {
+    color: $color;
+    font: {
+        family: 'Lobster';
+        size: $size;
+        weight: $weight;
+    }
+}

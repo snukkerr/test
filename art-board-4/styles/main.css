@@ -1,0 +1,307 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3e302d;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+h1, h2, h3, p {
+  font-family: 'Lobster';
+  font-weight: normal;
+}
+
+header {
+  margin-bottom: -57px;
+}
+
+.pizza-image {
+  height: 190px;
+  left: -50px;
+  margin: 0;
+  position: relative;
+  top: -50px;
+  -webkit-transform: skew(-10deg) rotateZ(-1.25deg);
+          transform: skew(-10deg) rotateZ(-1.25deg);
+  width: 1620px;
+}
+
+.pizza-image__source {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
+.pizza-image__logo {
+  position: absolute;
+  right: -350px;
+  height: 234px;
+  -webkit-transform: skew(10deg) rotateZ(1.25deg);
+          transform: skew(10deg) rotateZ(1.25deg);
+  top: 85px;
+  width: 280px;
+}
+
+.main__title {
+  color: #ffffff;
+  font-size: 80px;
+  letter-spacing: 0.05em;
+  margin: 0 365px 55px 0;
+  text-align: right;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  background-color: #98908a;
+  border-top: 1px solid #98908a;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 625px;
+  left: -50px;
+  margin-bottom: 38px;
+  padding-left: 100px;
+  position: relative;
+  -webkit-transform: skew(-3deg);
+          transform: skew(-3deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 1910px;
+}
+
+.menu::before {
+  border-left: 1889px solid #98908a;
+  border-top: 100px solid transparent;
+  content: '';
+  height: 0;
+  left: 18px;
+  position: absolute;
+  top: -101px;
+  -webkit-transform: skew(3deg) translateZ(-1em);
+          transform: skew(3deg) translateZ(-1em);
+  width: 0;
+}
+
+.menu::after {
+  background-color: #502808;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  content: '';
+  height: 625px;
+  left: -91px;
+  padding-left: 100px;
+  position: absolute;
+  top: 7px;
+  -webkit-transform: translateZ(-1em);
+          transform: translateZ(-1em);
+  width: 1910px;
+}
+
+.menu__background-lines {
+  background-color: transparent;
+  height: 625px;
+  left: 0;
+  overflow: hidden;
+  padding-left: 100px;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 1910px;
+}
+
+.menu__background-lines::before {
+  background-color: #aaa19a;
+  content: '';
+  height: 76px;
+  left: -5px;
+  position: absolute;
+  top: 45px;
+  -webkit-transform: skew(-3deg) rotateZ(1.7deg);
+          transform: skew(-3deg) rotateZ(1.7deg);
+  width: 1930px;
+}
+
+.menu__background-lines::after {
+  background-color: #aaa19a;
+  bottom: -30px;
+  content: '';
+  height: 210px;
+  left: -5px;
+  position: absolute;
+  -webkit-transform: skew(-3deg) rotateZ(1.7deg);
+          transform: skew(-3deg) rotateZ(1.7deg);
+  width: 1930px;
+}
+
+.menu-box {
+  margin-right: 75px;
+  position: relative;
+  -webkit-transform: skew(3deg);
+          transform: skew(3deg);
+  width: 400px;
+}
+
+.menu-box:nth-child(3) {
+  top: 15px;
+}
+
+.menu-box:nth-child(4) {
+  top: 30px;
+}
+
+.menu-box:nth-child(5) {
+  margin: 0;
+  top: 40px;
+}
+
+.menu-box__name {
+  color: #ffffff;
+  font-size: 72px;
+  padding-left: 22px;
+  position: absolute;
+  top: -82px;
+  -webkit-transform: rotateZ(3deg);
+          transform: rotateZ(3deg);
+}
+
+.menu-box:nth-child(3) .menu-box__name {
+  top: -75px;
+}
+
+.menu-box:nth-child(4) .menu-box__name {
+  top: -67px;
+}
+
+.menu-box:nth-child(5) .menu-box__name {
+  top: -62px;
+}
+
+.menu-box__information {
+  font-size: 42px;
+  padding: 35px 0 15px 15px;
+  -webkit-transform: rotateZ(1.25deg);
+          transform: rotateZ(1.25deg);
+}
+
+.menu-box__items {
+  margin-bottom: 40px;
+}
+
+.menu-box:nth-child(3) .menu-box__items,
+.menu-box:nth-child(4) .menu-box__items {
+  margin-bottom: 30px;
+}
+
+.menu-box__item {
+  color: #ffffff;
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.menu-box__bonus {
+  color: #d0021b;
+  font-size: 42px;
+  letter-spacing: 0.025em;
+}
+
+.menu-box__price {
+  color: #000000;
+  font-size: 90px;
+  line-height: 1;
+  padding-right: 30px;
+  text-align: right;
+}
+
+.menu-box:first-child .menu-box__bonus {
+  margin-bottom: 15px;
+}
+
+.menu-box:nth-child(2) .menu-box__bonus {
+  margin-bottom: 10px;
+}
+
+.menu-box:nth-child(3) .menu-box__bonus {
+  margin-bottom: 6px;
+}
+
+.menu-box:nth-child(4) .menu-box__bonus {
+  margin-bottom: 3px;
+}
+
+.menu-box__price sup {
+  font-size: 50px;
+  padding-left: 15px;
+}
+
+.footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #aaa19a;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: -53px;
+  margin: 0;
+  padding: 0 65px 0 90px;
+  position: relative;
+  -webkit-transform: skew(-3deg) rotateZ(-0.35deg);
+          transform: skew(-3deg) rotateZ(-0.35deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 1893px;
+}
+
+.footer::before {
+  background-color: #502808;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  content: '';
+  height: 100px;
+  left: 9px;
+  position: absolute;
+  top: 7px;
+  width: 1893px;
+  -webkit-transform: translateZ(-1em);
+          transform: translateZ(-1em);
+}
+
+.footer__header {
+  color: #d8312e;
+  font-size: 85px;
+  line-height: 1;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+
+.footer__description {
+  color: #d0021b;
+  font-size: 50px;
+}
+
+.footer__phone {
+  color: #000000;
+  font-size: 85px;
+}
+
+.footer__phone .footer__phone-icon {
+  height: 68px;
+}
+/*# sourceMappingURL=main.css.map */

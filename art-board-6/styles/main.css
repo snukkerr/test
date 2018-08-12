@@ -1,0 +1,326 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #aaa19a;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.special-ofert {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #3e302d;
+  letter-spacing: 0.175em;
+  margin-left: 70px;
+  padding: 12px 100px;
+  position: relative;
+  -webkit-transform: skew(3.75deg);
+          transform: skew(3.75deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.special-ofert::after {
+  background-color: #7f7873;
+  content: '';
+  height: 117px;
+  left: -15px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateZ(-1em);
+          transform: translateZ(-1em);
+  width: 850px;
+}
+
+.special-ofert__text {
+  color: #ffffff;
+  font-family: 'Lobster';
+  font-size: 75px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.right__content {
+  background-color: #3e302d;
+  -webkit-box-shadow: -10px 10px 0px 10px #7f7873;
+          box-shadow: -10px 10px 0px 10px #7f7873;
+  height: 100vh;
+  padding: 30px 55px 0;
+  position: relative;
+  right: -75px;
+  -webkit-transform: skew(3.75deg);
+          transform: skew(3.75deg);
+  width: 984px;
+}
+
+.right__text-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  -webkit-transform: skew(-3.75deg);
+          transform: skew(-3.75deg);
+}
+
+.right__information {
+  color: #00b9e0;
+  font-family: 'Lobster';
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.right__call {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right__call-icon {
+  height: 70px;
+  margin-right: 20px;
+}
+
+.right__number {
+  color: #ffffff;
+  font-family: 'Lobster';
+  font-size: 75px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.right__pizza {
+  height: 420px;
+  width: 800px;
+}
+
+.right__pizza::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  height: 420px;
+  left: 55px;
+  position: absolute;
+  top: 625px;
+  width: 22px;
+  z-index: 2;
+}
+
+.right__pizza::after {
+  background-image: url("../extra-small-logo.png");
+  content: '';
+  height: 83px;
+  right: 150px;
+  position: absolute;
+  top: 640px;
+  width: 99px;
+  z-index: 2;
+}
+
+.right__pizza-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 520px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.cards {
+  height: 487px;
+  left: 91px;
+  padding: 34px 0 0;
+  position: absolute;
+  top: 125px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 1790px;
+}
+
+.cards::before {
+  background-color: #3e302d;
+  content: '';
+  position: absolute;
+  height: 487px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: skew(3.75deg);
+          transform: skew(3.75deg);
+  width: 1790px;
+}
+
+.cards .cards__background-shadow {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  z-index: -2;
+}
+
+.cards .cards__background-shadow::before {
+  background-color: #7f7873;
+  content: '';
+  position: absolute;
+  height: 487px;
+  left: -15px;
+  position: absolute;
+  top: -16px;
+  -webkit-transform: translateZ(-1em) skew(3.75deg);
+          transform: translateZ(-1em) skew(3.75deg);
+  width: 900px;
+}
+
+.cards__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: -30px;
+  position: absolute;
+  width: inherit;
+}
+
+.card {
+  background-color: #aaa19a;
+  -webkit-box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+  height: 420px;
+  padding: 10px;
+  position: relative;
+  -webkit-transform: skew(3.75deg);
+          transform: skew(3.75deg);
+  width: 330px;
+}
+
+.card__title-background {
+  background-color: #7f7873;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.card__title {
+  color: #ffffff;
+  font-family: 'Lobster';
+  font-size: 65px;
+  font-weight: 300;
+}
+
+.card__bonus {
+  color: #ffffff;
+  font-family: 'Lobster';
+  font-size: 46px;
+  font-weight: 300;
+  letter-spacing: 0.045em;
+  padding-left: 15px;
+}
+
+.blue {
+  color: #00b9e0;
+}
+
+.card__price {
+  color: #d8312e;
+  font-family: 'Lobster';
+  font-size: 144px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.card__price sup {
+  font-size: 65px;
+  margin-left: 10px;
+}
+
+.pizza-make {
+  margin: 525px 0 0 125px;
+  -webkit-transform: skew(3.75deg);
+          transform: skew(3.75deg);
+  position: relative;
+}
+
+.pizza-make__title {
+  color: #332e33;
+  font-family: 'Lobster';
+  font-size: 75px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.pizza-make__description {
+  color: #ffffff;
+  font-family: 'Lobster';
+  font-size: 41px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 48px;
+  position: absolute;
+  width: 825px;
+}
+
+.pizza-make__description:nth-child(3) {
+  top: 350px;
+  width: 875px;
+}
+
+.brown {
+  color: #3e302d;
+}
+/*# sourceMappingURL=main.css.map */

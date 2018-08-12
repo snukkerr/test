@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1 class="wrapper__title">Art Board-uri</h1>
+        <div class="boxes">
+            <div class="box">
+                <h1 class="box__title">Artboard</h1>
+                <div class="box__image"></div>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Artboard 4</h1>
+                <div class="box__image"></div>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Artboard 6</h1>
+                <div class="box__image"></div>
+            </div>
+            <div class="box">
+                <h1 class="box__title">Artboard 7</h1>
+                <div class="box__image"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const clearHref = (url) => location.href = location.href.slice(0, -10) + url;
+
+        const urls = ['artboard/index.html', 'art-board-4/index.html','art-board-6/index.html','art-board-7/index.html']
+
+        for (let i = 0; i < document.getElementsByClassName('box').length; i++) {
+            document.getElementsByClassName('box')[i].addEventListener('click', () => clearHref(urls[i]));
+        }
+    </script>
+</body>
+</html>

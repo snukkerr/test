@@ -1,0 +1,221 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3e302d;
+  font-family: 'Lobster';
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+main {
+  position: relative;
+}
+
+.chicken-menu__title {
+  background-color: #372b28;
+  color: #ffffff;
+  font-size: 100px;
+  padding: 10px 0 33px 60px;
+}
+
+.chicken-menu__row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 10px 60px;
+}
+
+.chicken-menu__row:nth-child(odd) {
+  background-color: #372b28;
+}
+
+.chicken-menu__price {
+  width: 105px;
+}
+
+.chicken-menu__price,
+.chicken-menu__name {
+  color: #ffffff;
+  font-size: 65px;
+  line-height: 1;
+}
+
+.chicken-menu__price sup {
+  font-size: 36px;
+  margin-left: 7px;
+}
+
+.chicken-menu__bucket {
+  padding: 25px 0 0 60px;
+}
+
+.burger-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.burger-menu::before {
+  content: '';
+  background-image: url("right.svg");
+  height: 1080px;
+  position: absolute;
+  right: -15px;
+  width: 1275px;
+}
+
+.burger-menu__row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 145px;
+  left: -1000px;
+  width: 800px;
+  z-index: 5;
+}
+
+.burger-menu__row .burger-menu__price {
+  color: #ffffff;
+  font-family: 'Delius';
+  font-size: 70px;
+  line-height: 1;
+  padding-right: 10px;
+  position: relative;
+}
+
+.burger-menu__row .burger-menu__price sup {
+  display: inline-block;
+  font-size: 45px;
+  left: 5px;
+  position: relative;
+  top: 7px;
+}
+
+.burger-menu__row .burger-menu__name {
+  color: #ffffff;
+  font-size: 62px;
+  line-height: 1;
+}
+
+.burger-menu__row:first-child {
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+}
+
+.burger-menu__row:nth-child(2) {
+  top: 240px;
+  -webkit-transform: rotate(-0.5deg);
+          transform: rotate(-0.5deg);
+}
+
+.burger-menu__row:nth-child(2) .burger-menu__image {
+  margin-right: -75px;
+}
+
+.burger-menu__row:nth-child(3) {
+  top: 335px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.burger-menu__row:nth-child(3) .burger-menu__price {
+  margin-right: -25px;
+}
+
+.burger-menu__row:nth-child(4) {
+  top: 430px;
+  -webkit-transform: rotate(0.95deg);
+          transform: rotate(0.95deg);
+}
+
+.burger-menu__row:nth-child(4) .burger-menu__image {
+  margin-right: -100px;
+}
+
+.burger-menu__row:nth-child(5) {
+  top: 515px;
+  -webkit-transform: rotate(0.95deg);
+          transform: rotate(0.95deg);
+}
+
+.burger-menu__row:nth-child(5) .burger-menu__price {
+  margin-right: -45px;
+}
+
+.burger-menu__row:nth-child(6) {
+  top: 610px;
+  -webkit-transform: rotate(2.5deg);
+          transform: rotate(2.5deg);
+}
+
+.burger-menu__row:nth-child(6) .burger-menu__image {
+  margin-right: -110px;
+}
+
+.burger-menu__row:nth-child(7) {
+  top: 700px;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.burger-menu__row:nth-child(7) .burger-menu__price {
+  margin-right: -60px;
+}
+
+.burger-menu__row:nth-child(8) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  top: 910px;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+.burger-menu__row:nth-child(8)::after {
+  background-image: url("logo.png");
+  content: '';
+  height: 123px;
+  left: -235px;
+  position: absolute;
+  top: -25px;
+  width: 147px;
+}
+
+.burger-menu__row:nth-child(8) .burger-menu__phone {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger-menu__row:nth-child(8) .burger-menu__phone .burger-menu__phone-icon {
+  height: 85px;
+  margin-right: 25px;
+}
+
+.burger-menu__row:nth-child(8) .burger-menu__phone .burger-menu__name {
+  font-size: 90px;
+}
+/*# sourceMappingURL=main.css.map */
